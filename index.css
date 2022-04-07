@@ -396,7 +396,6 @@
     justify-content: start;
     height: auto;
   }
-
   .main1 {
     text-align: center;
     font-size: 50%;
@@ -413,20 +412,85 @@
     border: solid white;
     grid-area: footer1;
   }
-  .imagen1 {
-    width: 20%;
-    height: 20%;
+  .body2 {
+    font-size: 25%;
+    background-color: white;
+    grid-template-areas:
+      "header2 header2"
+      "nav2 main2"
+      "footer2 footer2";
+  }
+  .header2 {
+    text-align: center;
+    font-size: 25%;
+    background-color: black;
+    color: white;
+    border: solid white;
+    grid-area: header2;
+  }
+  .main2 {
+    font-size: 25%;
+    background-color: black;
+    border: solid white;
+    color: white;
+    grid-area: main2;
+  }
+  .body2 {
+    font-size: 25%;
+    background-color: white;
+    grid-template-areas:
+      "header3 header3"
+      "nav3 main3"
+      "footer3 footer3";
+  }
+  .nav3 {
+    font-size: 25%;
+    grid-area: nav3;
+    background-color: black;
+    color: white;
+    border: solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: auto;
+  }
+  .main3 {
+    font-size: 25%;
+    background-color: black;
+    border: solid white;
+    color: white;
+    grid-area: main3;
+  }
+
+  .header4 {
+    text-align: center;
+    font-size: 25%;
+    background-color: black;
+    color: white;
+    border: solid white;
+    grid-area: header4;
   }
   .body4 {
+    font-size: 25%;
     background-color: white;
     grid-template-areas:
       "header4 header4"
-      "nav4 nav4"
-      "main4 main4"
+      "nav4 main4"
       "footer4 footer4";
   }
+  .nav4 {
+    font-size: 25%;
+    grid-area: nav4;
+    background-color: black;
+    color: white;
+    border: solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: auto;
+  }
   .main4 {
-    font-size: 50%;
+    font-size: 25%;
     background-color: black;
     border: solid white;
     color: white;
@@ -437,5 +501,32 @@
     flex-direction: row;
     justify-content: space-around;
     font-size: 50%;
+  }
+  .header5 {
+    text-align: center;
+    font-size: 25%;
+    background-color: black;
+    color: white;
+    border: solid white;
+    grid-area: header5;
+  }
+  .body5 {
+    font-size: 25%;
+    background-color: rgb(24, 181, 233);
+    grid-template-areas:
+      "header5 header5"
+      "nav5 main5"
+      "footer5 footer5";
+  }
+  .nav5 {
+    font-size: 25%;
+    grid-area: nav5;
+    background-color: black;
+    color: white;
+    border: solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: auto;
   }
 }
