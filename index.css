@@ -428,6 +428,17 @@
     border: solid white;
     grid-area: header2;
   }
+  .nav2 {
+    font-size: 50%;
+    grid-area: nav2;
+    background-color: black;
+    color: white;
+    border: solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: auto;
+  }
   .main2 {
     font-size: 25%;
     background-color: black;
@@ -435,7 +446,7 @@
     color: white;
     grid-area: main2;
   }
-  .body2 {
+  .body3 {
     font-size: 25%;
     background-color: white;
     grid-template-areas:
