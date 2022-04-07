@@ -19,16 +19,15 @@
   grid-template-columns: 12rem 1fr;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  grid-template-areas: 
-  "header1 header1"
-  "nav1 main1"
-  "footer1 footer1"
-  ;
+  grid-template-areas:
+    "header1 header1"
+    "nav1 main1"
+    "footer1 footer1";
 }
 .nav1 {
   font-size: 100%;
   grid-area: nav1;
-  background-image: linear-gradient(black, blue);
+  background-image: linear-gradient(rgb(18, 186, 241), black);
   color: white;
   border: solid white;
   display: flex;
@@ -37,7 +36,10 @@
   height: auto;
 }
 .navegador1,
-.navegador2, .navegador3, .navegador4, .navegador5 {
+.navegador2,
+.navegador3,
+.navegador4,
+.navegador5 {
   text-align: center;
 }
 .li {
@@ -56,6 +58,17 @@
   width: 50%;
   height: 60%;
   border: solid white;
+  transition: 3seg;
+}
+.imagen1:hover {
+  width: 60%;
+  height: 65%;
+}
+.imagen2 {
+  width: 50%;
+  height: 60%;
+  border: solid white;
+  animation: from-right 4s ease;
 }
 .footer1 {
   text-align: end;
@@ -75,10 +88,10 @@
   grid-template-columns: 12rem 1fr;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  grid-template-areas: 
-  "header2 header2"
-  "nav2 main2"
-  "footer2 footer2"
+  grid-template-areas:
+    "header2 header2"
+    "nav2 main2"
+    "footer2 footer2";
 }
 .header2 {
   text-align: center;
@@ -91,7 +104,7 @@
 .nav2 {
   font-size: 100%;
   grid-area: nav2;
-  background-image: linear-gradient(black, blue);
+  background-image: linear-gradient(rgb(18, 186, 241), black);
   color: white;
   border: solid white;
   display: flex;
@@ -132,10 +145,10 @@
   grid-template-columns: 12rem 1fr;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  grid-template-areas: 
-  "header3 header3"
-  "nav3 main3"
-  "footer3 footer3"
+  grid-template-areas:
+    "header3 header3"
+    "nav3 main3"
+    "footer3 footer3";
 }
 .header3 {
   text-align: center;
@@ -146,7 +159,7 @@
   grid-area: header3;
 }
 .nav3 {
-  background-image: linear-gradient(black, blue);
+  background-image: linear-gradient(rgb(18, 186, 241), black);
   color: white;
   border: solid white;
   display: flex;
@@ -167,11 +180,13 @@
   width: 45%;
   height: 30%;
   border: solid white;
+  animation: from-right 4s ease;
 }
 .bombo {
   width: 50%;
   height: 30%;
   border: solid white;
+  animation: from-right 4s ease;
 }
 .listat {
   font-weight: italic;
@@ -199,10 +214,10 @@
   grid-template-columns: 12rem 1fr;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  grid-template-areas: 
-  "header4 header4"
-  "nav4 main4"
-  "footer4 footer4"
+  grid-template-areas:
+    "header4 header4"
+    "nav4 main4"
+    "footer4 footer4";
 }
 .main4 {
   font-size: 100%;
@@ -214,7 +229,7 @@
 .nav4 {
   font-size: 100%;
   grid-area: nav4;
-  background-image: linear-gradient(black, blue);
+  background-image: linear-gradient(rgb(18, 186, 241), black);
   color: white;
   border: solid white;
   display: flex;
@@ -228,8 +243,8 @@
   justify-content: space-around;
 }
 .article {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .tituloTym4 {
   font-size: 150%;
@@ -247,18 +262,38 @@ flex-wrap: wrap;
 .roja {
   width: 45%;
   height: 45%;
+  transition: 3seg;
+}
+.roja:hover {
+  width: 55%;
+  height: 55%;
 }
 .negra {
   width: 45%;
   height: 45%;
+  transition: 3seg;
+}
+.negra:hover {
+  width: 55%;
+  height: 55%;
 }
 .short {
   width: 45%;
   height: 45%;
+  transition: 3seg;
+}
+.short:hover {
+  width: 55%;
+  height: 55%;
 }
 .combo {
   width: 45%;
   height: 45%;
+  transition: 3seg;
+}
+.combo:hover {
+  width: 55%;
+  height: 55%;
 }
 .tabla4 {
   font-weight: bold;
@@ -294,7 +329,7 @@ flex-wrap: wrap;
 .nav5 {
   font-size: 100%;
   grid-area: nav5;
-  background-image: linear-gradient(black, blue);
+  background-image: linear-gradient(rgb(18, 186, 241), black);
   color: white;
   border: solid white;
   display: flex;
@@ -313,18 +348,28 @@ flex-wrap: wrap;
   grid-template-columns: 12rem 1fr;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  grid-template-areas: 
-  "header5 header5"
-  "nav5 main5"
-  "footer5 footer5"
+  grid-template-areas:
+    "header5 header5"
+    "nav5 main5"
+    "footer5 footer5";
 }
 .main5 {
   grid-area: main5;
   text-align: center;
   padding: 1rem;
 }
-@media (max-width: 700px) {
+@keyframes from-right {
+  0% {
+    opacity: 0;
+    transform: translatex(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0px);
+  }
+}
 
+@media (max-width: 700px) {
   .header1 {
     text-align: center;
     font-size: 50%;
@@ -333,66 +378,64 @@ flex-wrap: wrap;
     border: solid white;
     grid-area: header1;
   }
-.body1 { 
-  background-color: black;
-  grid-template-areas: 
-  "header1 header1"
-  "nav1 main1"
-  "footer1 footer1";
-}
-.nav1 {
-  font-size: 50%;
-  grid-area: nav1;
-  background-color: black;
-  color: white;
-  border: solid white;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  height: auto;}
+  .body1 {
+    background-color: black;
+    grid-template-areas:
+      "header1 header1"
+      "nav1 main1"
+      "footer1 footer1";
+  }
+  .nav1 {
+    font-size: 50%;
+    grid-area: nav1;
+    background-color: black;
+    color: white;
+    border: solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: auto;
+  }
 
-.main1 {
-  text-align: center;
-  font-size: 50%;
-  border: solid white;
-  background-color: black;
-  color: white;
-  grid-area: main1;
-}
-.footer1 {
-  text-align: end;
-  font-size: 50%;
-  background-color: black;
-  color: white;
-  border: solid white;
-  grid-area: footer1;
-}
-.imagen1 {
+  .main1 {
+    text-align: center;
+    font-size: 50%;
+    border: solid white;
+    background-color: black;
+    color: white;
+    grid-area: main1;
+  }
+  .footer1 {
+    text-align: end;
+    font-size: 50%;
+    background-color: black;
+    color: white;
+    border: solid white;
+    grid-area: footer1;
+  }
+  .imagen1 {
     width: 20%;
-    height: 20%; 
-}
-.body4 {
-  background-color: white;
-  grid-template-areas: 
-  "header4 header4"
-  "nav4 nav4"
-  "main4 main4"
-  "footer4 footer4";
-}
-.main4 {
-  font-size: 50%;
-  background-color: black;
-  border: solid white;
-  color: white;
-  grid-area: main4;
-}
-.ol {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-size: 50%;}
-
-
-
-
+    height: 20%;
+  }
+  .body4 {
+    background-color: white;
+    grid-template-areas:
+      "header4 header4"
+      "nav4 nav4"
+      "main4 main4"
+      "footer4 footer4";
+  }
+  .main4 {
+    font-size: 50%;
+    background-color: black;
+    border: solid white;
+    color: white;
+    grid-area: main4;
+  }
+  .ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 50%;
+  }
 }
